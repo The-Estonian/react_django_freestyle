@@ -19,7 +19,6 @@ function App() {
           </Suspense>
         }
       >
-
       <Route index element={<MainPage />} />
       <Route path='/sender' element={<SendToServer />} />
       <Route path='/receiver' element={<ReceiveFromServer />} />

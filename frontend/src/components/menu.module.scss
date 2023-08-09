@@ -1,18 +1,52 @@
 @mixin flexRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: Column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
-    @include flexRow;
-    a{
-        padding: 1rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        border-radius: 0 0 1rem 1rem;
-        margin: 0.1rem;
-        color: black;
-        text-decoration: none;
+  @include flexRow;
+  a {
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0 0 1rem 1rem;
+    margin: 0.1rem;
+    color: black;
+  }
+  &__style {
+    text-decoration: none;
+  }
+  &__active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-color: red;
+    transition: 0.5s;
+    text-underline-offset: 0.4rem;
+    &:hover {
+      text-decoration-thickness: 0.3rem;
     }
+  }
 }
+
+.send{
+    @include flexCol;
+    margin-top: 2%;
+  }
+
+.receive{
+    @include flexCol;
+    margin-top: 2%;
+  }
+
+.main{
+    @include flexCol;
+    margin-top: 2%;
+  }

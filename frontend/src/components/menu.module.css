@@ -10,5 +10,41 @@
   border-radius: 0 0 1rem 1rem;
   margin: 0.1rem;
   color: black;
+}
+.menu__style {
   text-decoration: none;
+}
+.menu__active {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-decoration-color: red;
+  transition: 0.5s;
+  text-underline-offset: 0.4rem;
+}
+.menu__active:hover {
+  text-decoration-thickness: 0.3rem;
+}
+
+.send {
+  display: flex;
+  flex-direction: Column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.receive {
+  display: flex;
+  flex-direction: Column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.main {
+  display: flex;
+  flex-direction: Column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
 }/*# sourceMappingURL=menu.module.css.map */

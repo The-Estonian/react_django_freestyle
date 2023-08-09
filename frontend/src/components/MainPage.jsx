@@ -1,9 +1,7 @@
-import React from 'react'
+import styles from "./menu.module.css"
 
 const MainPage = () => {
-  return (
-    <div>MainPage</div>
-  )
+  return <div className={styles.main}>MainPage</div>;
 }
 
 export default MainPage

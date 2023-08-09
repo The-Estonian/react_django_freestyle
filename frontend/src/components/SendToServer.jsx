@@ -1,9 +1,7 @@
-import React from 'react'
+import styles from './menu.module.css';
 
 const SendToServer = () => {
-  return (
-    <div>SendToServer</div>
-  )
-}
+  return <div className={styles.send}>SendToServer</div>;
+};
 
-export default SendToServer
+export default SendToServer;
